@@ -20,18 +20,18 @@ boy_running = loadAnimation ("running 1.png","running 2.png","running 3.png","ru
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(600,400);
  
   
   
-  ground = createSprite(width/2,height-17,width,125);
+  ground = createSprite(100,450,100,10);
 
   background = createSprite(200,150,400,20);
   background.addImage(backgroundImage);
   background.scale = 1;
   background.x = background.width /2;
   
- boy = createSprite (70,height-170,20,50);
+ boy = createSprite (70,380,20,20);
   boy.addAnimation ("running",boy_running);
   boy.scale = 0.4;
   
@@ -96,7 +96,7 @@ background.x = background.width/2;
 
 function spawnBikeNCar(){
  if (frameCount % 120 === 0){
-   var obstacle = createSprite(600,height-140,20,30);
+   var obstacle = createSprite(600,380,20,20);
    obstacle.scale = 0.2;
    obstacle.velocityX = -7;
 
