@@ -20,7 +20,7 @@ boy_running = loadAnimation ("running 1.png","running 2.png","running 3.png","ru
 }
 
 function setup() {
-  createCanvas(600,400);
+  createCanvas(600,600);
  
   
   
