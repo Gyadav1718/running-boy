@@ -57,7 +57,7 @@ function draw() {
   if (background.x < 0){ 
 background.x = background.width/2;
   }
- if((touches.length > 0 || keyDown("SPACE")) && boy.y  >= height-240) {
+ if((touches.length > 0 || keyDown("SPACE")) && boy.y  >= height-300) {
       boy.velocityY = -17;
        touches = [];
     }
